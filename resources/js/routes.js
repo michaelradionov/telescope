@@ -140,6 +140,12 @@ export default [
     },
 
     {
+        path: '/tasks',
+        name: 'tasks',
+        component: require('./screens/tasks/index').default
+    },
+
+    {
         path: '/schedule/:id',
         name: 'schedule-preview',
         component: require('./screens/schedule/preview').default

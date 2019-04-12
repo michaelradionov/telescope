@@ -1,4 +1,4 @@
-import Vue from 'vue';
+ import Vue from 'vue';
 import Base from './base';
 import axios from 'axios';
 import Routes from './routes';
@@ -29,6 +29,7 @@ const router = new VueRouter({
 Vue.component('vue-json-pretty', VueJsonPretty);
 Vue.component('related-entries', require('./components/RelatedEntries.vue').default);
 Vue.component('index-screen', require('./components/IndexScreen.vue').default);
+Vue.component('custom-index-screen', require('./components/CustomIndexScreen.vue').default);
 Vue.component('preview-screen', require('./components/PreviewScreen.vue').default);
 Vue.component('alert', require('./components/Alert.vue').default);
 
