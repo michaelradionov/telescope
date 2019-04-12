@@ -22,29 +22,29 @@
 
         <template slot="row" slot-scope="slotProps">
             {{ slotProps.entry.content.data.data }}
-            <td class="table-fit">
-                {{ slotProps.entry.content.data.data.repository.website }}
-            </td>
+            <!--<td class="table-fit">-->
+                <!--{{ slotProps.entry.content.data.data.repository.website }}-->
+            <!--</td>-->
 
-            <td class="table-fit">
-                {{ slotProps.entry.content.data.data.repository.full_name }}
-            </td>
+            <!--<td class="table-fit">-->
+                <!--{{ slotProps.entry.content.data.data.repository.full_name }}-->
+            <!--</td>-->
 
-            <td class="table-fit">
-                {{ slotProps.entry.content.data.data.actor.username }}
-            </td>
+            <!--<td class="table-fit">-->
+                <!--{{ slotProps.entry.content.data.data.actor.username }}-->
+            <!--</td>-->
 
-            <td class="table-fit">
-                {{ slotProps.entry.content.data.data.push.changes[0].new.name }}
-            </td>
+            <!--<td class="table-fit">-->
+                <!--{{ slotProps.entry.content.data.data.push.changes[0].new.name }}-->
+            <!--</td>-->
 
-            <td class="table-fit">
-                <span class="badge font-weight-light" :class="'badge-'+jobStatusClass(slotProps.entry.content.status)">
-                    {{slotProps.entry.content.status}}
-                </span>
-            </td>
+            <!--<td class="table-fit">-->
+                <!--<span class="badge font-weight-light" :class="'badge-'+jobStatusClass(slotProps.entry.content.status)">-->
+                    <!--{{slotProps.entry.content.status}}-->
+                <!--</span>-->
+            <!--</td>-->
 
-            <td class="table-fit" :data-timeago="slotProps.entry.created_at">{{ timeAgo(slotProps.entry.created_at) }}</td>
+            <!--<td class="table-fit" :data-timeago="slotProps.entry.created_at">{{ timeAgo(slotProps.entry.created_at) }}</td>-->
 
             <!--<td>-->
                 <!--<span :title="slotProps.entry.content.name">{{truncate(slotProps.entry.content.name, 68)}}</span><br>-->
