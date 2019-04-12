@@ -21,6 +21,7 @@
 
 
         <template slot="row" slot-scope="slotProps">
+            {{ slotProps.entry.content.data.data }}
             <td class="table-fit">
                 {{ slotProps.entry.content.data.data.repository.website }}
             </td>
