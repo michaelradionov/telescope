@@ -72,7 +72,7 @@
             updateEntries() {
                 axios.get('/tasks/get')
                     .then(res => {
-                        this.entries = res;
+                        this.entries = res.data;
                         this.ready = true;
                     });
             }
