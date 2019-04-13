@@ -22,11 +22,11 @@
 
         <template slot="row" slot-scope="slotProps">
             <td class="table-fit">
-                {{ slotProps.entry.content.data.data.repository.website }}
+                {{ slotProps.entry.content.data.data }}
             </td>
 
             <td class="table-fit">
-                {{ slotProps.entry.content.data.data.repository.full_name }}
+                {{ slotProps.entry.content.data.data }}
             </td>
 
             <td class="table-fit">
