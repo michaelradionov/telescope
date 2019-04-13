@@ -267,3 +267,13 @@ button:hover{
 .nomaster {
   color: #b3b3b3;
 }
+
+.btn-launch {
+  width: 80px;
+
+  transition: background 0.3s;
+
+  &:disabled {
+    opacity: 1;
+  }
+}
