@@ -198,5 +198,6 @@
 </script>
 
 <script src="{{asset(mix('app.js', 'vendor/telescope'))}}"></script>
+<script type="text/javascript" src="https://jira.flagstudio.ru/s/95ad89360eec1845f13b7a13ded5c0c4-T/-y6xh9q/73015/19eec8c46095745849ebdd927f182f88/2.0.23/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=ru-RU&collectorId=507ae24e"></script>
 </body>
 </html>
