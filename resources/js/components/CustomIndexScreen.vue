@@ -72,8 +72,12 @@
             updateEntries() {
                 axios.get('/tasks/get')
                     .then(res => {
-                        this.entries = res.data;
-                        this.ready = true;
+                        if (res.data.status === 'success') {
+                            const tasks = res.data.data.tasks;
+
+                            this.entries = tasks;
+                            this.ready = true;
+                        }
                     });
             }
         },

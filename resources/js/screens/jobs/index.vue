@@ -23,28 +23,28 @@
 
         <template slot="row" slot-scope="slotProps" v-if="slotProps.entry.content.data.data">
             <td>
-                <span v-if="slotProps.entry.content.data.data.repository">
-                    <a target="_blank" :href="slotProps.entry.content.data.data.repository.website">
-                        {{ slotProps.entry.content.data.data.repository.website }}
+                <span v-if="slotProps.entry.content.data.data.domain">
+                    <a target="_blank" :href="slotProps.entry.content.data.data.domain">
+                        {{ slotProps.entry.content.data.data.domain }}
                     </a>
                 </span>
             </td>
 
             <td>
-                <span v-if="slotProps.entry.content.data.data.repository">
-                    {{ slotProps.entry.content.data.data.repository.full_name }}
+                <span v-if="slotProps.entry.content.data.data.repo">
+                    {{ slotProps.entry.content.data.data.repo }}
                 </span>
             </td>
 
             <td>
-                <span v-if="slotProps.entry.content.data.data.actor">
-                    {{ slotProps.entry.content.data.data.actor.username }}
+                <span v-if="slotProps.entry.content.data.data.author">
+                    {{ slotProps.entry.content.data.data.author }}
                 </span>
             </td>
 
             <td>
-                <span v-if="slotProps.entry.content.data.data.push" :class="{'nomaster': slotProps.entry.content.data.data.push.changes[0].new.name != 'master'}">
-                    {{ slotProps.entry.content.data.data.push.changes[0].new.name }}
+                <span v-if="slotProps.entry.content.data.data.branch" :class="{'nomaster': slotProps.entry.content.data.data.branch != 'master'}">
+                    {{ slotProps.entry.content.data.data.branch}}
                 </span>
             </td>
 
