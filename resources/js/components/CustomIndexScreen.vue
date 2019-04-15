@@ -36,9 +36,11 @@
                 <!--</tr>-->
 
 
-                <tr v-for="(entry, index) in entries" :key="index">
-                    <slot name="row" :entry="entry"></slot>
-                </tr>
+                <template v-for="entry in entries">
+                    <tr v-for="item in entry">
+                        <slot name="row" :entry="item"></slot>
+                    </tr>
+                </template>
 
 
                 <!--<tr v-if="hasMoreEntries" key="olderEntries" class="dontanimate">-->

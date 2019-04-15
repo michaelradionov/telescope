@@ -19,23 +19,23 @@
 
             <template slot="row" slot-scope="slotProps">
                 <td class="table-fit">
-                    {{ slotProps.entry[0].domain }}
+                    {{ slotProps.entry.domain }}
                 </td>
 
                 <td class="table-fit">
-                    {{ slotProps.entry[0].repo }}
+                    {{ slotProps.entry.repo }}
                 </td>
 
                 <td class="table-fit">
-                    {{ slotProps.entry[0].branch }}
+                    {{ slotProps.entry.branch }}
                 </td>
 
                 <td class="table-fit">
-                    {{ slotProps.entry[0].server }}
+                    {{ slotProps.entry.server }}
                 </td>
 
                 <td class="table-fit">
-                    <Launch :repo="slotProps.entry[0].repo" :branch="slotProps.entry[0].branch" />
+                    <Launch :repo="slotProps.entry.repo" :branch="slotProps.entry.branch" />
                 </td>
 
             </template>

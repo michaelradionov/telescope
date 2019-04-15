@@ -1897,6 +1897,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'CustomIndexScreen',
@@ -49559,15 +49561,14 @@ var render = function() {
             _vm._v(" "),
             _c(
               "tbody",
-              _vm._l(_vm.entries, function(entry, index) {
-                return _c(
-                  "tr",
-                  { key: index },
-                  [_vm._t("row", null, { entry: entry })],
-                  2
-                )
-              }),
-              0
+              [
+                _vm._l(_vm.entries, function(entry, index1) {
+                  return _vm._l(entry, function(item) {
+                    return _c("tr", [_vm._t("row", null, { entry: item })], 2)
+                  })
+                })
+              ],
+              2
             )
           ]
         )
@@ -56220,7 +56221,7 @@ var render = function() {
                   _c("td", { staticClass: "table-fit" }, [
                     _vm._v(
                       "\n                " +
-                        _vm._s(slotProps.entry[0].domain) +
+                        _vm._s(slotProps.entry.domain) +
                         "\n            "
                     )
                   ]),
@@ -56228,7 +56229,7 @@ var render = function() {
                   _c("td", { staticClass: "table-fit" }, [
                     _vm._v(
                       "\n                " +
-                        _vm._s(slotProps.entry[0].repo) +
+                        _vm._s(slotProps.entry.repo) +
                         "\n            "
                     )
                   ]),
@@ -56236,7 +56237,7 @@ var render = function() {
                   _c("td", { staticClass: "table-fit" }, [
                     _vm._v(
                       "\n                " +
-                        _vm._s(slotProps.entry[0].branch) +
+                        _vm._s(slotProps.entry.branch) +
                         "\n            "
                     )
                   ]),
@@ -56244,7 +56245,7 @@ var render = function() {
                   _c("td", { staticClass: "table-fit" }, [
                     _vm._v(
                       "\n                " +
-                        _vm._s(slotProps.entry[0].server) +
+                        _vm._s(slotProps.entry.server) +
                         "\n            "
                     )
                   ]),
@@ -56255,8 +56256,8 @@ var render = function() {
                     [
                       _c("Launch", {
                         attrs: {
-                          repo: slotProps.entry[0].repo,
-                          branch: slotProps.entry[0].branch
+                          repo: slotProps.entry.repo,
+                          branch: slotProps.entry.branch
                         }
                       })
                     ],
